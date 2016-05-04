@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Angular 2 QuickStart";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="libs/css/styles.css">
+}
+
+@section HeadScripts
+{
+     <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="libs/js/es6-shim.min.js"></script>
+    <script src="libs/js/zone.js"></script>
+    <script src="libs/js/Reflect.js"></script>
+    <script src="libs/js/system.src.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+            System.import('app').catch(function (err) { console.error(err); });
+    </script>
+}
+
+<cache vary-by="@Context.Request.Path">
+    <my-app>Loading...</my-app>
+</cache>
