@@ -3,28 +3,31 @@
     // map tells the System loader where to look for things
   var map = {
     'app':                        'app', // 'dist',
-    'rxjs':                       'libs/js/rxjs',
-    'angular2-in-memory-web-api': 'libs/js/angular2-in-memory-web-api',
-    '@angular':                   'libs/js/@angular'
+    'rxjs':                       'libs/vendor/rxjs',
+    'angular2-in-memory-web-api': 'libs/vendor/angular2-in-memory-web-api',
+    '@angular':                   'libs/vendor/@angular',
+    '@angular2-material':         'libs/vendor/@angular2-material'
     };
 
     // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
     'app':                        { main: 'main.js',  defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
-    'angular2-in-memory-web-api': { defaultExtension: 'js' }
+    'angular2-in-memory-web-api': { defaultExtension: 'js' },
+    '@angular2-material/core':    { format: 'cjs', defaultExtension: 'js', main: 'core.js' },
+    '@angular2-material/card':    { format: 'cjs', defaultExtension: 'js', main: 'card.js' },
     };
 
   var packageNames = [
-    'libs/js/@angular/common',
-    'libs/js/@angular/compiler',
-    'libs/js/@angular/core',
-    'libs/js/@angular/http',
-    'libs/js/@angular/platform-browser',
-    'libs/js/@angular/platform-browser-dynamic',
-    'libs/js/@angular/router',
-    'libs/js/@angular/testing',
-    'libs/js/@angular/upgrade'
+    '@angular/common',
+    '@angular/compiler',
+    '@angular/core',
+    '@angular/http',
+    '@angular/platform-browser',
+    '@angular/platform-browser-dynamic',
+    '@angular/router',
+    '@angular/testing',
+    '@angular/upgrade'
     ];
 
     // add package entries for angular packages in the form '@angular/common': { main: 'index.js', defaultExtension: 'js' }
