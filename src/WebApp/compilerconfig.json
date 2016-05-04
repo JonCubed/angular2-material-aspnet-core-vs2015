@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "app/demo-app.css",
+    "inputFile": "app/demo-app.scss"
+  },
+  {
+    "outputFile": "app/toolbar/toolbar-demo.css",
+    "inputFile": "app/toolbar/toolbar-demo.scss"
+  },
+  {
+    "outputFile": "app/sidenav/sidenav-demo.css",
+    "inputFile": "app/sidenav/sidenav-demo.scss"
+  },
+  {
+    "outputFile": "app/icon/icon-demo.css",
+    "inputFile": "app/icon/icon-demo.scss"
+  },
+  {
+    "outputFile": "app/button/button-demo.css",
+    "inputFile": "app/button/button-demo.scss"
+  }
+]

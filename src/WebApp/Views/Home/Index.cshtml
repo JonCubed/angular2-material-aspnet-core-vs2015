@@ -1,27 +1,41 @@
 ﻿@{
-    ViewBag.Title = "Angular 2 QuickStart";
+    ViewBag.Title = "Material2";
 }
 
 @section Styles {
-    <link rel="stylesheet" href="libs/css/styles.css">
+    <base href="/">
+    {{content-for 'head'}}
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+    <!-- FontAwesome for md-icon demo. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 }
 
 @section HeadScripts
 {
-     <!-- 1. Load libraries -->
+    <!-- 1. Load libraries -->
     <!-- Polyfill(s) for older browsers -->
     <script src="libs/vendor/es6-shim.min.js"></script>
     <script src="libs/vendor/zone.js"></script>
     <script src="libs/vendor/Reflect.js"></script>
+    <script src="libs/vendor/system-polyfills.js"></script>
     <script src="libs/vendor/system.src.js"></script>
 
+    <!-- HammerJS for gestures -->
+    <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
+   
     <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
     <script>
-            System.import('app').catch(function (err) { console.error(err); });
+        System.import('system-config.js')
+              .then(function () {
+                  System.import('main');
+              })
+              .catch(console.error.bind(console));
     </script>
 }
 
 <cache vary-by="@Context.Request.Path">
-    <my-app>Loading...</my-app>
+    <demo-app>Loading...</demo-app>
 </cache>

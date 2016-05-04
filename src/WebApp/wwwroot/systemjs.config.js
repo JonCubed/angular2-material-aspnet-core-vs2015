@@ -15,7 +15,11 @@
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { defaultExtension: 'js' },
     '@angular2-material/core':    { format: 'cjs', defaultExtension: 'js', main: 'core.js' },
-    '@angular2-material/card':    { format: 'cjs', defaultExtension: 'js', main: 'card.js' },
+    '@angular2-material/card': { format: 'cjs', defaultExtension: 'js', main: 'card.js' },
+    '@angular2-material/button': { format: 'cjs', defaultExtension: 'js', main: 'card.js' },
+    '@angular2-material/icon': { format: 'cjs', defaultExtension: 'js', main: 'card.js' },
+    '@angular2-material/sidenav': { format: 'cjs', defaultExtension: 'js', main: 'card.js' },
+    '@angular2-material/toolbar': { format: 'cjs', defaultExtension: 'js', main: 'card.js' },
     };
 
   var packageNames = [

@@ -18,10 +18,15 @@
         "@angular/platform-browser": "2.0.0-rc.0",
         "@angular/platform-browser-dynamic": "2.0.0-rc.0",
         "@angular/router-deprecated": "2.0.0-rc.0",
+        "@angular/router": "2.0.0-rc.0",
         "@angular/upgrade": "2.0.0-rc.0",
 
         "@angular2-material/core": "v2.0.0-alpha.4",
         "@angular2-material/card": "v2.0.0-alpha.4",
+        "@angular2-material/button": "v2.0.0-alpha.4",
+        "@angular2-material/sidenav": "v2.0.0-alpha.4",
+        "@angular2-material/toolbar": "v2.0.0-alpha.4",
+        "@angular2-material/icon": "v2.0.0-alpha.4",
 
         "systemjs": "0.19.27",
         "es6-shim": "^0.35.0",

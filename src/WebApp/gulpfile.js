@@ -5,13 +5,14 @@ var del = require('del');
 var dest = require('gulp-dest');
 
 var paths = {
-    app: ['app/**/*.ts'],
+    app: ['app/**/*.ts', 'app/**/*.css', 'app/**/*.html'],
     libs: [
         'node_modules/es6-shim/es6-shim.min.js',
         'node_modules/es6-shim/es6-shim.map',
         'node_modules/zone.js/dist/zone.js*',
         'node_modules/reflect-metadata/Reflect.js*',
-        'node_modules/systemjs/dist/system.src.js*'
+        'node_modules/systemjs/dist/system.src.js*',
+        'node_modules/systemjs/dist/system-polyfills.js'
     ],
     angular: [
         '@angular/common',
@@ -26,7 +27,11 @@ var paths = {
     ],
     angularMaterial: [
         '@angular2-material/core',
-        '@angular2-material/card'
+        '@angular2-material/card',
+        '@angular2-material/button',
+        '@angular2-material/icon',
+        '@angular2-material/sidenav',
+        '@angular2-material/toolbar'
     ],
     css: [
         'node_modules/bootstrap/dist/css/bootstrap.css',

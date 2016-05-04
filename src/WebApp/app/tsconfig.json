@@ -12,8 +12,12 @@
     },
     "compileOnSave": true,
     "files": [
-        "./app.component.ts",
+        "./demo-app.ts",
         "./main.ts",
+        "./button/button-demo.ts",
+        "./icon/icon-demo.ts",
+        "./sidenav/sidenav-demo.ts",
+        "./toolbar/toolbar-demo.ts",
         "../typings/main.d.ts"
     ],
     "exclude": [
